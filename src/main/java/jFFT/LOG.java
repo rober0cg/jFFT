@@ -11,7 +11,8 @@ public class LOG {
         WARN,
         INFO,
         DEBUG,
-        TRACE
+        TRACE,
+        ALL
     };
 
     String[] slevel = {
@@ -20,7 +21,8 @@ public class LOG {
         "WARN",
         "INFO",
         "DEBUG",
-        "TRACE"
+        "TRACE",
+        "ALL"
     };
 
     static LOG_LEVEL level = LOG_LEVEL.INFO;
@@ -62,4 +64,3 @@ public class LOG {
     }
 
 }
-

@@ -21,7 +21,7 @@ public class App
 	public static void main( String[] args )
         throws IOException, InterruptedException
     {
-        LOG.init(LOG.LOG_LEVEL.ERROR);
+        LOG.init(LOG.LOG_LEVEL.ALL);
         LOG.info("main BEGIN");
 
         LOG.info("main(" + args + ")");

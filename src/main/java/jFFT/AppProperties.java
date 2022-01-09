@@ -12,9 +12,9 @@ public class AppProperties {
     public final int CHANNELS = 1;
     public final int SAMPLE_SIZE = 16;
     public final boolean BIG_ENDIAN = true;
-    public final int PER_SECOND = 10 ;
-    public final int BUFFER_SIZE = 4 * 1024; // buffer mayor acumula muestras pasadas
-    public final int NUM_BUFFERS = 8 ;
+    public final int PER_SECOND = 10;
+    public final int BUFFER_SIZE = 32 * 1024; // buffer mayor acumula muestras pasadas
+    public final int NUM_BUFFERS = 8;
 
 //    public AppProperties() {
         // TODO Auto-generated constructor stub

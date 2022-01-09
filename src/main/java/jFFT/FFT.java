@@ -1,5 +1,36 @@
 package jFFT;
 
+
+/******************************************************************************
+ *  Compilation:  javac FFT.java
+ *  Execution:    java FFT n
+ *  Dependencies: Complex.java
+ *
+ *  Compute the FFT and inverse FFT of a length n complex sequence
+ *  using the radix 2 Cooley-Tukey algorithm.
+ *  Bare bones implementation that runs in O(n log n) time and O(n)
+ *  space. Our goal is to optimize the clarity of the code, rather
+ *  than performance.
+ *
+ *  This implementation uses the primitive root of unity w = e^(-2 pi i / n).
+ *  Some resources use w = e^(2 pi i / n).
+ *
+ *  Reference: https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerII.pdf
+ *
+ *  Limitations
+ *  -----------
+ *   -  assumes n is a power of 2
+ *
+ *   -  not the most memory efficient algorithm (because it uses
+ *      an object type for representing complex numbers and because
+ *      it re-allocates memory for the subarray, instead of doing
+ *      in-place or reusing a single temporary array)
+ *
+ *  For an in-place radix 2 Cooley-Tukey FFT, see
+ *  https://introcs.cs.princeton.edu/java/97data/InplaceFFT.java.html
+ *
+ ******************************************************************************/
+
 public class FFT {
 
     // compute the FFT of x[], assuming its length n is a power of 2
@@ -139,4 +170,3 @@ public class FFT {
     }
 
 }
-
